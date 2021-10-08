@@ -1,0 +1,7 @@
+{
+  "name": "tiroDeCanhao",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
