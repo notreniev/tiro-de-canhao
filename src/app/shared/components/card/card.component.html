@@ -1,0 +1,54 @@
+<ion-searchbar placeholder="Pesquisar"></ion-searchbar>
+
+<ion-card *ngFor="let idea of ideas; let i = index;">
+  <ion-card-header>
+    <ion-card-title>{{idea.name}}</ion-card-title>
+    <ion-chip color={{idea.status}} *ngIf="idea.status">
+      <ion-label>{{idea.position}}</ion-label>
+    </ion-chip>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item href="#">
+      <ion-label class="ion-text-wrap">
+        {{idea.desc}}
+      </ion-label>
+    </ion-item>
+
+    <ion-list>
+      <ion-radio-group id="rank" name="rank" (ionChange)="radioGroupChange(idea,$event)" value="idea.rank" #rank>
+        <div class="item" [ngClass]="{'item-active': idea.rank === 1}">
+          <ion-label>1</ion-label>
+          <ion-radio value="1"></ion-radio>
+        </div>
+
+        <div class="item" [ngClass]="{'item-active': idea.rank === 2}">
+          <ion-label>2</ion-label>
+          <ion-radio value="2"></ion-radio>
+        </div>
+
+        <div class="item" [ngClass]="{'item-active': idea.rank === 3}">
+          <ion-label>3</ion-label>
+          <ion-radio value="3"></ion-radio>
+        </div>
+
+        <div class="item" [ngClass]="{'item-active': idea.rank === 4}">
+          <ion-label>4</ion-label>
+          <ion-radio value="4"></ion-radio>
+        </div>
+
+        <div class="item" [ngClass]="{'item-active': idea.rank === 5}">
+          <ion-label>5</ion-label>
+          <ion-radio value="5"></ion-radio>
+        </div>
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-item>
+      <ion-note>
+        {{idea.tags}}
+      </ion-note>
+    </ion-item>
+  </ion-card-content>
+
+</ion-card>

@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,144 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.raindow {
+  height: 3px;
+  width: 100%;
+  background: #00000000; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    left,
+    #ffff4a 0,
+    #fcd000 4%,
+    #ffc112 8%,
+    #ffc112 11%,
+    #ff8a00 16%,
+    #ff5f5f 22%,
+    #ff253a 28%,
+    #ff37a8 37%,
+    #c739ff 49%,
+    #a400e1 56%,
+    #2eceff 72%,
+    #0086ff 80%,
+    #72f772 94%,
+    #00d604
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    right,
+    #ffff4a 0,
+    #fcd000 4%,
+    #ffc112 8%,
+    #ffc112 11%,
+    #ff8a00 16%,
+    #ff5f5f 22%,
+    #ff253a 28%,
+    #ff37a8 37%,
+    #c739ff 49%,
+    #a400e1 56%,
+    #2eceff 72%,
+    #0086ff 80%,
+    #72f772 94%,
+    #00d604
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    right,
+    #ffff4a 0,
+    #fcd000 4%,
+    #ffc112 8%,
+    #ffc112 11%,
+    #ff8a00 16%,
+    #ff5f5f 22%,
+    #ff253a 28%,
+    #ff37a8 37%,
+    #c739ff 49%,
+    #a400e1 56%,
+    #2eceff 72%,
+    #0086ff 80%,
+    #72f772 94%,
+    #00d604
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    to right,
+    #ffff4a 0,
+    #fcd000 4%,
+    #ffc112 8%,
+    #ffc112 11%,
+    #ff8a00 16%,
+    #ff5f5f 22%,
+    #ff253a 28%,
+    #ff37a8 37%,
+    #c739ff 49%,
+    #a400e1 56%,
+    #2eceff 72%,
+    #0086ff 80%,
+    #72f772 94%,
+    #00d604
+  ); /* Standard syntax (must be last) */
+}
+
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-Regular.ttf");
+}
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "MagaluTextos";
+  src: url("./assets/fonts/MagaluTextos-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+html {
+  --ion-default-font: "MagaluTextos", "Roboto", "Helvetica Neue", sans-serif !important;
+}
+
+ion-header {
+  overflow: hidden;
+}
+
+ion-title {
+  font-weight: normal;
+  font-size: medium;
+}
