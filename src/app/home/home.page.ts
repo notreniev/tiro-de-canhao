@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+import { IonRouterOutlet, MenuController, ModalController } from '@ionic/angular';
+import { ModalComponent } from '../shared/components/modal/modal.component';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,20 @@ import { MenuController } from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor() { }
+  constructor(
+    private routerOutlet: IonRouterOutlet,
+    private modalController: ModalController) { }
 
+  create() {
+    this.presentModal();
+  }
+
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: ModalComponent,
+      showBackdrop: true,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
 }

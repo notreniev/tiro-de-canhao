@@ -6,10 +6,15 @@
       <ion-icon name="menu-outline"></ion-icon>
     </ion-menu-toggle>
   </ion-toolbar>
-  <!-- <ion-button>Envie</ion-button> -->
+
+  <nav style="display: block;">
+    <ul style="position: fixed; z-index: 10; width: 100%;">
+      <li style="float:right;"><a type="button" (click)="create()">Nova idéia</a></li>
+    </ul>
+  </nav>
 </ion-header>
 
-<ion-content [fullscreen]="false">
+<ion-content [fullscreen]="true">
 
   <!--  the side menu  -->
   <ion-menu side="start" menuId="first" contentId="main">

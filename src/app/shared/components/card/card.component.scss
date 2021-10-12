@@ -5,6 +5,7 @@
 
 ion-searchbar {
   width: 90%;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,8 +87,7 @@ ion-chip {
   }
 }
 
-ion-item {
-  ion-note {
-    font-size: 0.8rem;
-  }
+ion-note {
+  font-size: 0.8rem;
+  padding-left: 10px;
 }

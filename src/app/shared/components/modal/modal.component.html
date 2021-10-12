@@ -1,0 +1,22 @@
+<ion-header>
+  <div class="raindow"></div>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-back-button></ion-back-button>
+      <ion-icon slot="end" name="close-outline" (click)="dismiss()"></ion-icon>
+    </ion-buttons>
+    <ion-title>Deixe aqui a sua idéia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input placeholder="Título"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-textarea rows="6" cols="20" placeholder="Qual é o seu tiro de canhão?"></ion-textarea>
+  </ion-item>
+
+  <ion-button expand="full" color="primary">Salvar</ion-button>
+</ion-content>
