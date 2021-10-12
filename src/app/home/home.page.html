@@ -7,11 +7,11 @@
     </ion-menu-toggle>
   </ion-toolbar>
 
-  <nav style="display: block;">
-    <ul style="position: fixed; z-index: 10; width: 100%;">
-      <li style="float:right;"><a type="button" (click)="create()">Nova idéia</a></li>
-    </ul>
-  </nav>
+  <ion-button expand="full" (click)="create()" mode="ios" style="margin: 0px">
+    <ion-icon name="bulb-outline"></ion-icon>
+    Envie a sua idéia!
+  </ion-button>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
